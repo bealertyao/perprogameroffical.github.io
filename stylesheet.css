@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Raleway:ital@1&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font: Open Sans;
+}
+
+.container{
+	width: 100%;
+	min-height: 100vh;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.nav-bar{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	width: 50px;
+	cursor: pointer;
+	margin: 30px 0px;
+}
+
+.menu-icon{
+	width: 25px;
+	cursor: pointer;
+	display: none;
+}
+
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: blueviolet;
+	font-size: 14px;
+}
+
+nav ul li a:hover{
+	color: darkred;
+}
+
+.row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 100px 0px;
+}
+
+.col-1{
+	flex-basis: 40%;
+	position: relative;
+	margin-left: 50px;
+}
+
+.col-1 h2{
+	font-size: 54px;
+}
+
+.col-1 h3{
+	font-size: 30px;
+	color: purple;
+	font-weight: 100;
+	margin: 20px 0px 10px;
+}
+
+.col-1 p{
+	font-size: 16px;
+	color: brown;
+	font-weight: 100%;
+}
+
+.col-1 h4{
+	margin: 30px 0px;
+	font-size: 20px;
+}
+
+button{
+	width: 140px;
+	border: 0;
+	padding: 12px 10px;
+	outline: none;
+	color: whitesmoke;
+	background: linear-gradient(to right,purple,indianred);
+	cursor: pointer;
+	border-radius: 10px;
+	transition: width 0.5s;
+}
+
+button img{
+	width: 30px;
+	display: none;
+}
+
+button:hover img{
+	display: block;
+}
+
+button:hover{
+	width: 160px;
+	display: flex;
+}
+
+.col-1 ::after{
+	content: '';
+	width: 10px;
+	height: 57%;
+	background: linear-gradient(#ff469f,#ff6062);
+	position: absolute;
+	left: -40px;
+	top: 8px;
+}
+
+.col-2{
+	position: relative;
+	flex-basis: 60%;
+	display: flex;
+	align-items: center;
+}
+
+.col-2 .gaming{
+	width: 90%;
+    padding: 70px;
+    margin-bottom: 9px
+}
+
+.social-links img{
+height: 13px;
+margin: 20px;
+cursor: pointer;
+}
+
+.social-links{
+	text-align: center;
+}
+
+.footer{
+	color: whitesmoke;
+    text-align: center;
+    background-color: red; 
+}
+
+@media only screen and (max-width: 425px){
+
+	nav ul{
+		width: 100%;
+		background: linear-gradient(#ff469f,#ff6062);
+		position: absolute;
+		top: 75px;
+		right: 0px;
+		z-index: 2;
+	}
+
+	nav ul li{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	nav ul li a {
+		color: purple;
+	}
+
+	.menu-icon{
+		display: block;
+	}
+	#menuList{
+		overflow: hidden;
+		transition: 0.5s;
+	}
+	ul li :hover{
+		color: brown;
+	}
+	.row{
+		flex-direction: column-reverse;
+		margin: 50px 0px;
+	}
+
+	.col-2{
+		flex-basis: 100%;
+		margin-bottom: 50px;
+	}
+	.col-2 .gaming{
+		width: 70%;
+		margin-top: -14px;
+	}
+
+	.col-1 h2{
+		font-size: 38px;
+	}
+	.col-1 h3{
+       font-size: 20px;
+	}
+	.col-1 p{
+         font-size: 13px;
+	}
+ 
+	.footer{
+		font-size: 11px;
+	}
+}

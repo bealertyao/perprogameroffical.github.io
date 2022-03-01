@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Perprogamer</title>
+</head>
+<body>
+<div class="container">
+	<div class="nav-bar">
+		<img src="images/logo1.png" class="logo">
+		<nav>
+			<ul id="menuList">
+				<li><a href="#">Profile</a>
+					<li><a href="#">About</a>
+						<li><a href="#">Games</a>
+							<li><a href="#">Contact</a>
+			</ul>
+		</nav>
+		<img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+	</div>
+
+		<div class="row">
+			<div class="col-1">
+				<h2>PERPROGAMER<br>Aryan Choudhary</h2>
+				<h3>This is Offical Page of perprogamer</h3>
+				<p>(All the news will be real and trusted)</p>
+				<h4>so follow this page</h4>
+				<button type="button">Subscribe<img src="images/aarow.png"></button>
+			</div>
+			<div class="col-2">
+				
+           <img src="images/gaming.jpg" class="gaming">
+           <div class="color-box"></div>
+			
+		</div>
+	</div>
+	<div class="social-links">
+		<img src="images/insta.jpg">
+		<img src="images/fb.png">
+		<img src="images/tw.png">
+	</div>
+	<footer class="footer">
+	    All rights reserved &Copyright -www.perprogamer.com
+	</footer>
+</div>
+
+<script>
+	
+	var menuList = document.getElementById("menuList");
+
+	menuList.style.maxHeight = "0px"
+
+
+	function togglemenu() {
+		 
+		 if (menuList.style.maxHeight == "0px")
+		  {
+		  	menuList.style.maxHeight = "130px";
+		  }
+
+		  else
+		  {
+		  	menuList.style.maxHeight = "0px"
+		  }
+
+			}
+</script>
+</body>
+</html>
